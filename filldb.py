@@ -67,7 +67,7 @@ class PatentePipeline:
             for i in range(1,total+1):
                 if past == "noPast":
                     past = actual
-                    actual = helper.createNewPatent(1,1,1,1,0)
+                    #actual = helper.createNewPatent(1,1,1,1,0) ERROR ENCONTRADO Y SOLUCIONADO
                     try:
                         patente = Patente(patente = actual)
                         self.session.add(patente)

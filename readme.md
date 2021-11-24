@@ -12,5 +12,9 @@ el llenado de la base de datos en un mal pc como el mío puede tardar días, pue
 
 #### db
 se añadio una base de datos que va hasta la placa ABAO808 cuya posicion es 690808 que sería la máxima, si quieres usar la base de datos agregada usa estos rangos para probar.
+
+#### Hotfix features
+- En la base de datos el id corresponde al ID de la placa anterior esto se debe a que falta la placa AAAA000 ya que tenía un error en la linea 70 del archivo filldb.py que quedó comentada.
+- Validación añadida a GetPatent
 ## Instrucciones con Docker
 proximamente...

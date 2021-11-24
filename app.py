@@ -21,6 +21,9 @@ class GetPosition(Resource):
 
 class GetPatent(Resource):
     def get(self,id):
+        if not id.isdigit():
+            print("wtf bro")
+            return "id inválido"
         pipeline = PatentePipeline()
         pipeline.open_session()
         patente = pipeline.get_patent(int(id))
@@ -28,8 +31,8 @@ class GetPatent(Resource):
         return patente
 
 api.add_resource(GetPosition, "/position/<string:patent>")
-api.add_resource(GetPatent, "/patent/<int:id>")
+api.add_resource(GetPatent, "/patent/<string:id>")
 
 if __name__ == "__main__":
-    createDb()
+    #createDb()
     app.run(debug=True)
