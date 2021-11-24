@@ -31,5 +31,5 @@ api.add_resource(GetPosition, "/position/<string:patent>")
 api.add_resource(GetPatent, "/patent/<int:id>")
 
 if __name__ == "__main__":
-    #createDb()
+    createDb()
     app.run(debug=True)

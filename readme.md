@@ -8,7 +8,9 @@ Las dos Apis están en el archivo app.py, una ves intales las librerías que est
 Una vez esté ejecutandose el servicio podrás probarlo con postman o haciendo uso del archivo test.py, lo editas con la ip requerida, pasas los datos necesarios para la API que desees probar y listo, lo ejecutas en otra terminal con *python test.py", antes de usarlo verifica la BASE, e ingresa bien los datos.
 
 #### DISCUPLPAS & HERRAMIENTAS
-el llenado de la base de datos en un mal pc como el mío puede tardar días, puede modificarse el codigo en app.py para luego de correrlo una vez y que se hayan llenado unas cuantas placas, ya no se ejecute de nuevo y corra directo el servicio. Se hizo uso de Flask para las APIs, SQLAlchemy para las conecciones en pipeline, y sqlite3 para la base de datos
+el llenado de la base de datos en un mal pc como el mío puede tardar días, puede modificarse el codigo en app.py para luego de correrlo una vez y que se hayan llenado unas cuantas placas, ya no se ejecute de nuevo y corra directo el servicio. Se hizo uso de Flask para las APIs, SQLAlchemy para las conecciones en pipeline, y sqlite3 para la base de datos. Comenta la linea 34 de app.py donde se llama la funcion createDb() si quieres usar la base de datos añadida
 
+#### db
+se añadio una base de datos que va hasta la placa ABAO808 cuya posicion es 690808 que sería la máxima, si quieres usar la base de datos agregada usa estos rangos para probar.
 ## Instrucciones con Docker
 proximamente...
