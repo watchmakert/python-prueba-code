@@ -2,7 +2,7 @@
 El siquiente programa contiene dos APIs y una lógica de llenado de base de datos con todas las posibles placas, al ejecutar la app.py se iniciará el proceso de llenado, luego queará disponible el servicio de las APIs
 
 ### Api
-Las dos Apis están en el archivo app.py, una ves intales las librerías que están en el archivo requirements.txt con el comando *pip install -r requirements.txt*, puedes ejecutar el servicio en consola con *python app.py*
+Las dos Apis están en el archivo app.py, una ves instales las librerías que están en el archivo requirements.txt con el comando *pip install -r requirements.txt*, puedes ejecutar el servicio en consola con *python app.py*
 
 ### Test
 Una vez esté ejecutandose el servicio podrás probarlo con postman o haciendo uso del archivo test.py, lo editas con la ip requerida, pasas los datos necesarios para la API que desees probar y listo, lo ejecutas en otra terminal con *python test.py", antes de usarlo verifica la BASE, e ingresa bien los datos.
